@@ -1,0 +1,16 @@
+version: '2'
+networks:
+  web:
+    external: true
+  internal:
+    external: false
+services:
+    db:
+      image: phpmyadmin/phpmyadmin
+      environment:
+        PMA_ARBITRARY: 0
+      restart: unless-stopped
+      ports:
+          - "8080:80"
+      networks:
+          - web
