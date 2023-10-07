@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Portainer</short>
+  <description>Docker manager Interface</description>
+  <port protocol="tcp" port="8000"/>
+  <port protocol="tcp" port="9443"/>
+</service>
