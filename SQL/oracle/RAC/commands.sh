@@ -15,3 +15,5 @@
 
 /u01/app/19c/grid/bin/crsctl check crs
    srvctl status asm
+
+/u01/app/19c/grid/bin/srvctl start instance -db lab -node ora-01
